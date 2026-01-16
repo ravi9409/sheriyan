@@ -7,7 +7,7 @@ function Forms({ handleFormSubmitData }) {
 
   return (
     <div className='mt-10 flex gap-10 justify-center'>
-      <form className='flex gap-10' onSubmit={handleSubmit(data=>handleFormSubmitData(data))}>
+      <form className='flex gap-10' onSubmit={handleSubmit(data => handleFormSubmitData(data))}>
         <input {...register("name")} className='rounded-md px-2 py-1 text-base font-semibold outline-none' type="text" placeholder='Name' />
         <input {...register("email")} className='rounded-md px-2 py-1 text-base font-semibold outline-none' type="text" placeholder='Email' />
         <input {...register("imageUrl")} className='rounded-md px-2 py-1 text-base font-semibold outline-none' type="text" placeholder='Image URL' />

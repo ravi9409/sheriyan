@@ -2,11 +2,11 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import Card from './Card'
 
-function Cards({ users }) {
+function Cards({ users, handleRemove }) {
 
     return (
         <div className='w-full p-4 flex justify-center gap-4 flex-wrap'>
-            <Card users={users} />
+            <Card users={users} handleRemove={handleRemove} />
         </div>
     )
 }
